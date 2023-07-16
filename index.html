@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Set background color */
+        body {
+            background-color: #f6f6f6;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        /* Navigation bar */
+        .navbar {
+            background-color: #141414;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+        
+        .navbar a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+            outline: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Search bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .search-button {
+            background-color: #0070c9;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+        
+        .search-button:hover {
+            background-color: #00599e;
+        }
+        
+        /* Logo */
+        .logo {
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 10px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 100px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+        
+        /* Button */
+        .btn {
+            display: inline-block;
+            background-color: #0070c9;
+            color: #fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border: none;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background-color: #0070c9;
+            color: #fff;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function searchWebsite() {
+            var query = document.getElementById("searchQuery").value;
+            // Perform search functionality or redirect to search page
+            // Replace the code below with your own implementation
+            alert("Searching for: " + query);
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="search-container">
+            <input type="text" id="searchQuery" class="search-input" placeholder="Search">
+            <button onclick="searchWebsite()" class="search-button">Search</button>
+        </div>
+        <a href="#"><img src="your-logo.png" alt="Logo" class="logo"></a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Your Website</h1>
+        <p>Experience the future today.</p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p>Designed by You</p>
+    </div>
+</body>
+</html>
